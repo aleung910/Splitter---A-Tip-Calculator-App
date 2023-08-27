@@ -1,9 +1,6 @@
-htmt{
-    font-size: 63%;
-}
-
-:root {
-    /*Color primary*/
+html{
+  font-size: 65%;
+  /*Color primary*/
     --strong-cyan: hsl(172, 67%, 45%);
 
     /*Neutral*/
@@ -13,35 +10,110 @@ htmt{
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
-  }
-
-body{
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    background-color: var(--white);
-    display: flex;
-    WIDTH:100%;
-    padding: 3rem;
-    gap: 2REM;
-    max-width: 75%;
 }
 
 header{
-    margin-top: 10REM;
+  margin-top: 10rem;
 }
 
-.amount > div {
-    background-color: var(--very-dark-cyan);
-    padding: 2rem;
-    border-radius: 10PX; 
-    height:100%;
-    color: var(--white);
+body{
+  font-family: 'Space Mono', monospace;
+  font-weight:700;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
 
+}
+
+main{
+  background-color:white;
+  display:flex;
+  width:100%;
+  max-width:75%;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.button{
+  background-color: hsl(172, 67%, 45%);
+  width: 100%;
+  padding:1rem;
+  border:none;
+  border-radius:5px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  transition: all 0.5s;
+}
+
+  .button:hover {
+    background-color: rgba(170, 196, 163, 0.5);
+  }
+.button:active {
+    background-color: var(--strong-cyan);
+  }
+
+#valtip, #valtotal {
+  font-size:2.3rem;
+  color: var(--strong-cyan)
+}
+
+.TipPercentage{
+  margin: 4rem 0;
+} 
+
+.TipPercentage h4{
+  font-size: 2rem;
+}
+
+.TipPercentage ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 10rem));
+grid-gap:20PX;  
+}
+
+.TipPercentage li, .TipPercentage .custom {
+  background-color:var(--very-dark-cyan);
+  display:flex;
+  justify-content:center;
+  border-radius:3px;
+  transition: all 0.5s;
+}
+.TipPercentage li:hover {
+  background-color: var(--strong-cyan)
+}
+
+.TipPercentage li:active {
+  background-color: var(--very-dark-cyan)
+}
+
+.TipPercentage li a{
+  text-decoration:none;
+  font-size:1.5rem;
+  color:white;
+  padding:1rem 4rem;
+}
+
+.TipPercentage .custom {
+  background-color: var(--light-grayish-cyan);
+}
+
+.TipPercentage .custom:hover {
+  background-color: var(--strong-cyan);
+}
+.TipPercentage .custom:activate {
+  background-color: var(--light-grayish-cyan);
+}
+
+#custom{
+  width: 55%;
+  border:none;
+  background:transparent;
+  font-family:inherit;
+  font-size:1.5 rem;
+  text-align:end;
+}
+#custom:focus-visible {
+  outline: none;
 }

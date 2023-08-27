@@ -33,15 +33,18 @@
   </div>
 
 
-  <section class='TipPercentage'>
+   <section class='TipPercentage'>
     <h4>Select Tip % </h4>
-    <button CLASS='button' type="button"> 5%</button>
-      <button CLASS='button' type="button"> 10%</button>
-      <button CLASS='button' type="button"> 15%</button>
-      <button CLASS='button' type="button"> 20%</button>
-      <button CLASS='button' type="button"> 25%</button>
-      <button CLASS='button' type="button"> 50%</button>
-      <input class='custom' type="number"> Custom 
+      <ul>
+        <li><a href="#" class="pp">5%</a></li>
+            <li><a href="#" class="pp">10%</a></li>
+            <li><a href="#" class="pp">15%</a></li>
+            <li><a href="#" class="pp">25%</a></li>
+            <li><a href="#" class="pp">50%</a></li>
+            <div class="custom">
+              <input type="text" placeholder="Custom" id="custom">
+            </div>      
+      </ul>
   </section>
 
   <section class="people">
@@ -55,15 +58,33 @@
 
 
   <section class="amount">
+    <div class="amount-tip">
     <div>
     <h4> Tip Amount</h4> 
     <p> / person </p>
     </div>
 
     <div>
-    <p> $0.00 </p>
+    <p id="valtip"> $0.00 </p>
     </div>
+
   </section>
+
+  <!-- <section class="amount">
+    <div class="amount">
+      <div class="amount-tip">
+        
+        <div>
+          <h5>Tip Amount</h5>
+          <p>/ person</p>
+        </div>
+
+        <div class="value">
+          <p id="value-amount">$0.00</p>
+        </div>
+
+      </section> -->
+
 
   <section class="total">
     <div>
@@ -72,7 +93,7 @@
     </div>
 
     <div>
-    <p> $0.00 </p>
+    <p id="valtotal"> $0.00 </p>
     </div>
 
     <button CLASS='button' type="button">RESET</button>
