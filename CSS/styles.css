@@ -78,6 +78,41 @@ main{
   color: var(--very-dark-cyan);
   text-align: end;
 }
+#numofpeople:focus-visible , #priceinput:focus-visible{
+  outline:none;
+}
+
+
+/* .amount p{
+  b
+} */
+/* continue here? */
+.amount{
+  margin-bottom: 5rem;
+  display: flex;
+  GAP:10REM;
+}
+
+
+/* //FIX SIZE OF TOTAL PART */
+.total{
+  display:flex;
+  justify-content: space-between;
+  GAP:10REM;
+  margin-bottom: 10rem;
+}
+@media (max-width: 500px) {
+  .total {
+    margin-bottom: 3rem;
+  }
+}
+.total > div+div {
+  flex-basis: 35%;
+}
+/* dont know */
+.total > div+div , .amount >div+div {
+  flex-basis: 50%;
+}
 
 .button{
   background-color: hsl(172, 67%, 45%);
@@ -126,6 +161,11 @@ grid-gap:20PX;
   border-radius:3px;
   transition: all 0.5s;
 }
+
+.TipPercentage .custom {
+  background-color: var(--light-grayish-cyan);
+} 
+
 .TipPercentage li:hover {
   background-color: var(--strong-cyan)
 }
@@ -141,14 +181,10 @@ grid-gap:20PX;
   padding:1rem 4rem;
 }
 
-.TipPercentage .custom {
-  background-color: var(--light-grayish-cyan);
-}
-
 .TipPercentage .custom:hover {
   background-color: var(--strong-cyan);
 }
-.TipPercentage .custom:activate {
+.TipPercentage .custom:active{
   background-color: var(--light-grayish-cyan);
 }
 
@@ -157,7 +193,7 @@ grid-gap:20PX;
   border:none;
   background:transparent;
   font-family:inherit;
-  font-size:1.5 rem;
+  font-size:1.5rem;
   text-align:end;
 }
 #custom:focus-visible {
