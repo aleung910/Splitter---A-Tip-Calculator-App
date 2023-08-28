@@ -23,7 +23,7 @@ body{
   flex-direction:column;
   align-items: center;
   justify-content: center;
-
+  background-color: var(--light-grayish-cyan)
 }
 
 main{
@@ -33,6 +33,50 @@ main{
   max-width:75%;
   padding: 3rem;
   gap: 2rem;
+  border-radius: 5px;
+}
+
+.amount h4, .total h4 {
+  font-size:1.5rem;
+  color:black;
+}
+
+.cyansection{
+  background-color: var(--very-dark-cyan);
+  padding:2rem;
+  border-radius:5px;
+}
+
+
+/* make bold */
+.bill, .numofpeople{  
+  font-size: 2REM;
+}
+
+
+.moneysignimg{
+  HEIGHT:2REM;
+}
+.containerforbill{
+  background-color: var(--light-grayish-cyan);
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  padding:0.5rem 2rem;
+}
+
+/* blue border around bill of people */
+.containerforbill:hover{
+  border: solid var(--strong-cyan);
+}
+
+#numofpeople , #priceinput{
+  background-color: transparent;
+  border: NONE;
+  font-family: inherit;
+  font-size:2.3rem;
+  color: var(--very-dark-cyan);
+  text-align: end;
 }
 
 .button{
@@ -53,7 +97,9 @@ main{
     background-color: var(--strong-cyan);
   }
 
-#valtip, #valtotal {
+
+/* //making the numbers into bold */
+#valtip, #valtotal {   
   font-size:2.3rem;
   color: var(--strong-cyan)
 }
