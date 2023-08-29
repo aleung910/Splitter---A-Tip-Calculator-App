@@ -1,8 +1,30 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
 html{
   font-size: 65%;
   /*Color primary*/
     --strong-cyan: hsl(172, 67%, 45%);
-
     /*Neutral*/
     --very-dark-cyan: hsl(183, 100%, 15%);
     --dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -14,6 +36,7 @@ html{
 
 header{
   margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 body{
@@ -36,6 +59,12 @@ main{
   border-radius: 5px;
 }
 
+@media (max-width:500px){
+  main {
+    flex-direction: column;
+  }
+}
+
 .amount h4, .total h4 {
   font-size:1.5rem;
   color:black;
@@ -45,6 +74,8 @@ main{
   background-color: var(--very-dark-cyan);
   padding:2rem;
   border-radius:5px;
+  height:100%;
+  COLOR:white;
 }
 
 
@@ -82,17 +113,26 @@ main{
   outline:none;
 }
 
+.cyansection {
 
-/* .amount p{
-  b
-} */
-/* continue here? */
-.amount{
+}
+
+
+
+.cyansection h4{
+  font-size: 1.5rem;
+  COLOR:var(--white)
+}
+
+.cyansection p{
+  font-size: 1.1rem;
+}
+
+.amount{ 
   margin-bottom: 5rem;
   display: flex;
   GAP:10REM;
 }
-
 
 /* //FIX SIZE OF TOTAL PART */
 .total{
