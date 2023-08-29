@@ -20,7 +20,6 @@ clear: both;
 /* BASE STYLES
 /*******************************************/
 
-
 html{
   font-size: 65%;
   /*Color primary*/
@@ -78,7 +77,6 @@ main{
   COLOR:white;
 }
 
-
 .cyansection h4{
   font-size: 1.5rem;
   COLOR:var(--white)
@@ -124,7 +122,6 @@ main{
 } */
 
 
-
 .TipPercentage{
   margin: 4rem 0;
 } 
@@ -139,12 +136,68 @@ main{
   }
 }
 
+.TipPercentage ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 10rem));
+  grid-gap:20PX;  
+}
 
+.TipPercentage li, .TipPercentage .custom {
+  background-color:var(--very-dark-cyan);
+  display:flex;
+  justify-content:center;
+  border-radius:3px;
+  transition: all 0.5s;
+}
+
+.TipPercentage li:hover {
+  background-color: var(--strong-cyan)
+}
+
+.TipPercentage li:active {
+  background-color: var(--very-dark-cyan)
+}
+
+.TipPercentage li a{
+  text-decoration:none;
+  font-size:1.5rem;
+  color:white;
+  padding:1rem 4rem;
+}
+
+.TipPercentage .custom {
+  background-color: var(--light-grayish-cyan);
+} 
+
+.TipPercentage .custom:hover {
+  background-color: var(--strong-cyan);
+}
+.TipPercentage .custom:active{
+  background-color: var(--light-grayish-cyan);
+}
+
+#custom{
+  width: 55%;
+  border:none;
+  background:transparent;
+  font-family:inherit;
+  font-size:1.5rem;
+  text-align:end;
+}
+#custom:focus-visible {
+  outline: none;
+}
 /* make bold */
 .bill, .numofpeople{  
   font-size: 2REM;
 }
 
+@media (max-width: 500px){
+  .bill, .numofpeople{
+    font-size: 1.5rem;
+  }
+}
 
 .moneysignimg{
   HEIGHT:2REM;
@@ -170,15 +223,9 @@ main{
   color: var(--very-dark-cyan);
   text-align: end;
 }
+
 #numofpeople:focus-visible , #priceinput:focus-visible{
   outline:none;
-}
-
-
-
-
-.cyansection p{
-  font-size: 1.1rem;
 }
 
 
@@ -207,58 +254,19 @@ main{
   color: var(--strong-cyan)
 }
 
-
-
-
-.TipPercentage ul{
-  list-style:none;
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 10rem));
-grid-gap:20PX;  
-}
-
-.TipPercentage li, .TipPercentage .custom {
-  background-color:var(--very-dark-cyan);
-  display:flex;
-  justify-content:center;
-  border-radius:3px;
-  transition: all 0.5s;
-}
-
-.TipPercentage .custom {
+/* .TipPercentage .custom {
   background-color: var(--light-grayish-cyan);
+}  */
+
+
+
+.error {
+  color:red;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: end;
 } 
 
-.TipPercentage li:hover {
-  background-color: var(--strong-cyan)
-}
-
-.TipPercentage li:active {
-  background-color: var(--very-dark-cyan)
-}
-
-.TipPercentage li a{
-  text-decoration:none;
-  font-size:1.5rem;
-  color:white;
-  padding:1rem 4rem;
-}
-
-.TipPercentage .custom:hover {
-  background-color: var(--strong-cyan);
-}
-.TipPercentage .custom:active{
-  background-color: var(--light-grayish-cyan);
-}
-
-#custom{
-  width: 55%;
-  border:none;
-  background:transparent;
-  font-family:inherit;
-  font-size:1.5rem;
-  text-align:end;
-}
-#custom:focus-visible {
-  outline: none;
+.off {
+  display: none;
 }
