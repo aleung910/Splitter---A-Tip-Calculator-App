@@ -79,6 +79,67 @@ main{
 }
 
 
+.cyansection h4{
+  font-size: 1.5rem;
+  COLOR:var(--white)
+}
+
+.cyansection p{
+  font-size: 1rem;
+  COLOR:var(--white)
+}
+
+.amount{ 
+  margin-bottom: 5rem;
+  display: flex;
+  GAP:10REM;
+}
+
+@media (max-width:500px) {
+  .amount {
+    justify-content: space-between;
+  }
+}
+
+/* //FIX SIZE OF TOTAL PART */
+.total{
+  display:flex;
+  justify-content: space-between;
+  GAP:10REM;
+  margin-bottom: 10rem;
+}
+/* change margin length for smaller devices */
+@media (max-width:500px){
+  .total{
+    margin-bottom: 3rem; 
+  }
+}
+
+
+/* .total > div+div {
+  flex-basis: 35%;
+} */
+/* .total > div+div , .amount >div+div {
+  flex-basis: 50%;
+} */
+
+
+
+.TipPercentage{
+  margin: 4rem 0;
+} 
+
+.TipPercentage h4{
+  font-size: 2rem;
+}
+/* h4 size when lower width */
+@media (max-width:500px) {
+  .TipPercentage h4{
+    font-size: 1.5rem;
+  }
+}
+
+
 /* make bold */
 .bill, .numofpeople{  
   font-size: 2REM;
@@ -113,46 +174,13 @@ main{
   outline:none;
 }
 
-.cyansection {
-
-}
 
 
-
-.cyansection h4{
-  font-size: 1.5rem;
-  COLOR:var(--white)
-}
 
 .cyansection p{
   font-size: 1.1rem;
 }
 
-.amount{ 
-  margin-bottom: 5rem;
-  display: flex;
-  GAP:10REM;
-}
-
-/* //FIX SIZE OF TOTAL PART */
-.total{
-  display:flex;
-  justify-content: space-between;
-  GAP:10REM;
-  margin-bottom: 10rem;
-}
-@media (max-width: 500px) {
-  .total {
-    margin-bottom: 3rem;
-  }
-}
-.total > div+div {
-  flex-basis: 35%;
-}
-/* dont know */
-.total > div+div , .amount >div+div {
-  flex-basis: 50%;
-}
 
 .button{
   background-color: hsl(172, 67%, 45%);
@@ -179,13 +207,8 @@ main{
   color: var(--strong-cyan)
 }
 
-.TipPercentage{
-  margin: 4rem 0;
-} 
 
-.TipPercentage h4{
-  font-size: 2rem;
-}
+
 
 .TipPercentage ul{
   list-style:none;
