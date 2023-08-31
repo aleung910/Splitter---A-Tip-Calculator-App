@@ -16,6 +16,8 @@
 .clear {
 clear: both;
 }
+
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -33,6 +35,13 @@ html{
     --white: hsl(0, 0%, 100%);
 }
 
+
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 header{
   margin-top: 10rem;
   margin-bottom: 5rem;
@@ -41,7 +50,7 @@ header{
 body{
   font-family: 'Space Mono', monospace;
   font-weight:700;
-  display:flex;
+  display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
@@ -49,6 +58,7 @@ body{
 }
 
 main{
+  
   background-color:white;
   display:flex;
   width:100%;
@@ -114,13 +124,18 @@ main{
 }
 
 
-/* .total > div+div {
+ .cyansection .val {
   flex-basis: 35%;
-} */
-/* .total > div+div , .amount >div+div {
+} 
+ .cyansection .total .val {
   flex-basis: 50%;
-} */
+} 
 
+@media (max-width:500px) {
+  .cyansection .val{
+    flex-basis: 35%;
+  }
+}
 
 .TipPercentage{
   margin: 4rem 0;
@@ -202,20 +217,23 @@ main{
 .moneysignimg{
   HEIGHT:2REM;
 }
+
 .containerforbill{
   background-color: var(--light-grayish-cyan);
+  display:flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
-  display: flex;
-  align-items:center;
-  padding:0.5rem 2rem;
 }
+
+
 
 /* blue border around bill of people */
 .containerforbill:hover{
   border: solid var(--strong-cyan);
 }
 
-#numofpeople , #priceinput{
+#numofpeopleinput , #priceinput{
   background-color: transparent;
   border: NONE;
   font-family: inherit;
@@ -224,7 +242,7 @@ main{
   text-align: end;
 }
 
-#numofpeople:focus-visible , #priceinput:focus-visible{
+#numofpeopleinput:focus-visible , #priceinput:focus-visible{
   outline:none;
 }
 
@@ -249,14 +267,15 @@ main{
 
 
 /* //making the numbers into bold */
+
 #valtip, #valtotal {   
   font-size:2.3rem;
   color: var(--strong-cyan)
 }
 
-/* .TipPercentage .custom {
+.TipPercentage .custom {
   background-color: var(--light-grayish-cyan);
-}  */
+} 
 
 
 
