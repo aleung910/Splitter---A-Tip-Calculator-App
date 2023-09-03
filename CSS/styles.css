@@ -59,14 +59,14 @@ body{
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-grayish-cyan)
+  background-color: var(--light-grayish-cyan);
 }
 
 main{
   background-color:white;
   display:flex;
-  width:100%;
-  max-width:75%;
+  /* width:100%; */
+  max-width:76rem;
   padding: 3rem;
   gap: 2rem;
   border-radius: 5px;
@@ -98,7 +98,7 @@ main{
 
 .cyansection p{
   font-size: 1rem;
-  COLOR:var(--white)
+  COLOR:var(--light-grayish-cyan)
 }
 
 .amount{ 
@@ -126,13 +126,13 @@ main{
     margin-bottom: 3rem; 
   }
 }
-
+.cyansection .total .val {
+  flex-basis: 20%;
+} 
  .cyansection .val {
-  flex-basis: 35%;
+    flex-basis: 50%;
 } 
- .cyansection .total .val {
-  flex-basis: 50%;
-} 
+
 
 @media (max-width:500px) {
   .cyansection .val{
@@ -144,9 +144,6 @@ main{
   margin: 4rem 0;
 } 
 
-.TipPercentage h4{
-  font-size: 2rem;
-}
 /* h4 size when lower width */
 @media (max-width:500px) {
   .TipPercentage h4{
@@ -159,6 +156,7 @@ main{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 10rem));
   grid-gap:20PX;  
+  padding:0;
 }
 
 .TipPercentage li, .TipPercentage .custom {
@@ -206,9 +204,10 @@ main{
 #custom:focus-visible {
   outline: none;
 }
-/* make bold */
-.bill, .numofpeople{  
-  font-size: 2REM;
+
+.bill, .numofpeople, .TipPercentage{  
+  font-size: 1.5REM;
+  color: var(--dark-grayish-cyan)
 }
 
 @media (max-width: 500px){
@@ -249,6 +248,10 @@ main{
   outline:none;
 }
 
+#custom{
+  color:var(--very-dark-cyan)
+}
+
 
 .button{
   background-color: hsl(172, 67%, 45%);
@@ -259,10 +262,11 @@ main{
   font-size: 1.4rem;
   font-family: inherit;
   transition: all 0.5s;
+  color: var(--very-dark-cyan);
 }
 
   .button:hover {
-    background-color: rgba(170, 196, 163, 0.5);
+    background-color: var(--light-grayish-cyan);
   }
 .button:active {
     background-color: var(--strong-cyan);
@@ -289,3 +293,4 @@ main{
 .off {
   display: none;
 }
+
