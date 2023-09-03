@@ -42,6 +42,11 @@ html{
   }
 }
 
+.container{
+  display: flex;
+}
+
+
 header{
   margin-top: 10rem;
   margin-bottom: 5rem;
@@ -58,7 +63,6 @@ body{
 }
 
 main{
-  
   background-color:white;
   display:flex;
   width:100%;
@@ -122,7 +126,6 @@ main{
     margin-bottom: 3rem; 
   }
 }
-
 
  .cyansection .val {
   flex-basis: 35%;
@@ -265,7 +268,6 @@ main{
     background-color: var(--strong-cyan);
   }
 
-
 /* //making the numbers into bold */
 
 #valtip, #valtotal {   
@@ -276,8 +278,6 @@ main{
 .TipPercentage .custom {
   background-color: var(--light-grayish-cyan);
 } 
-
-
 
 .error {
   color:red;
