@@ -290,7 +290,12 @@ main{
   text-align: end;
 } 
 
-.off {
+.off1 {
   display: none;
 }
+
+.off2 {
+  display: none;
+}
+
 
