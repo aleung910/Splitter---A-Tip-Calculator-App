@@ -184,6 +184,8 @@ main{
 
 .TipPercentage .custom {
   background-color: var(--light-grayish-cyan);
+    background:transparent;
+    border-radius:3px;
 } 
 
 .TipPercentage .custom:hover {
@@ -198,8 +200,10 @@ main{
   border:none;
   background:transparent;
   font-family:inherit;
-  font-size:1.5rem;
-  text-align:end;
+  font-size:1.2rem;
+  text-align:center;
+  border-radius:3px;
+
 }
 #custom:focus-visible {
   outline: none;
@@ -299,3 +303,6 @@ main{
 }
 
 
+.attribution{
+  margin-top:  18REM;
+}
